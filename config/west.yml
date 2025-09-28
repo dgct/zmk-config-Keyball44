@@ -10,7 +10,7 @@ manifest:
       revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
-        remote: kloir-z
+      remote: kloir-z
       revision: main
   self:
     path: config
