@@ -54,24 +54,6 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-		
-		snipe-layers = <3>;
-		/*automouse-layer = <3>;*/
-		scroll-layers = <4>;
-	
-		/*   optional: ball action on specific layers  */
-		arrows {
-		    layers = <5>;
-		    bindings =
-		        <&kp RIGHT_ARROW>,
-		        <&kp LEFT_ARROW,
-		        <&kp UP_ARROW>,
-				<&kp DOWN_ARROW>;
-				/*   optional: ball action configuration  */
-				// tick = <10>;
-				// wait-ms = <5>;
-				// tap-ms = <5>;
-		};
     };
 };
 
