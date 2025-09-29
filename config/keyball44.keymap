@@ -12,25 +12,6 @@
 #include <dt-bindings/zmk/pointing.h>
 #include "boards/shields/keyball_nano/keyball44_right.overlay"
 
-&trackball {
-		snipe-layers = <NAV>;
-		scroll-layers = <SCROLL>;
-	
-		/*   optional: ball action on specific layers  */
-		arrows {
-		    layers = <SYM>;
-		    bindings =
-		        <&kp RIGHT_ARROW>,
-		        <&kp LEFT_ARROW>,
-		        <&kp UP_ARROW>,
-				<&kp DOWN_ARROW>;
-				/*   optional: ball action configuration  */
-				// tick = <10>;
-				// wait-ms = <5>;
-				// tap-ms = <5>;
-		};
-};
-
 &lt {
     tapping-term-ms = <200>;
     flavor = "hold-preferred";
@@ -140,4 +121,23 @@
             >;
         };
     };
+};
+
+&trackball {
+		snipe-layers = <NAV>;
+		scroll-layers = <SCROLL>;
+	
+		/*   optional: ball action on specific layers  */
+		arrows {
+		    layers = <SYM>;
+		    bindings =
+		        <&kp RIGHT_ARROW>,
+		        <&kp LEFT_ARROW>,
+		        <&kp UP_ARROW>,
+				<&kp DOWN_ARROW>;
+				/*   optional: ball action configuration  */
+				// tick = <10>;
+				// wait-ms = <5>;
+				// tap-ms = <5>;
+		};
 };
