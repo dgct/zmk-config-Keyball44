@@ -1,4 +1,4 @@
-layout: {zmk_keyboard: keyball44}
+layout: {zmk_keyboard: keyball44, layout_name: keyball_physical_layout}
 layers:
   MAC:
   - $$mdi:alpha-w-box$$
