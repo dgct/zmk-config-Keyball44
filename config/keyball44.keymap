@@ -4,6 +4,7 @@
 #define NAV     3
 #define ARROW   4
 #define SYM     5
+#define NUM     6
 
 #include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/mouse.h>
@@ -17,7 +18,7 @@
     // automouse-layer = <4>;
 
     scroll-layers = <SYM>;
-    snipe-layers = <NAV>;
+    // snipe-layers = <NAV>;
 
     arrows {
         layers = <ARROW>;
