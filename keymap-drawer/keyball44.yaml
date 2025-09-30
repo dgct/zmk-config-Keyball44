@@ -39,10 +39,10 @@ layers:
   - SYM
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-esc$$
-  - ARROW
+  - {t: '$$mdi:backspace$$', h: ARROW}
   - {t: '$$mdi:keyboard-space$$', h: NAV}
   - {t: '$$mdi:keyboard-tab$$', h: SYM}
-  - {t: '$$mdi:backspace$$', h: NUM}
+  - NUM
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - NAV
   WIN:
