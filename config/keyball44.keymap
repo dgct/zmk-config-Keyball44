@@ -18,6 +18,7 @@
     // automouse-layer = <4>;
 
     scroll-layers = <SYM>;
+
     // snipe-layers = <NAV>;
 
     arrows {
@@ -87,10 +88,10 @@
         default_layer {
             label = "MAC";
             bindings = <
-&caps_word      &kp Q        &kp W           &kp F           &kp P             &kp B                       &kp J      &kp L              &kp U            &kp Y            &kp SEMICOLON  &kp DELETE
-&kp LEFT_SHIFT  &mt LCTRL A  &mt LEFT_ALT R  &mt LEFT_GUI S  &mt LEFT_SHIFT T  &kp G                       &kp M      &mt RIGHT_SHIFT N  &mt RIGHT_GUI E  &mt RIGHT_ALT I  &mt RCTRL O    &kp RIGHT_CONTROL
-&kp LEFT_GUI    &kp Z        &kp X           &kp C           &kp D             &kp V                       &kp K      &kp H              &kp COMMA        &kp PERIOD       &kp SLASH      &mo 5
-&kp LEFT_ALT    &kp ESCAPE   &mo 4           &lt 3 SPACE     &lt 5 TAB                    &lt 6 BACKSPACE  &kp ENTER                                                                      &mo 3
+&caps_word      &kp Q        &kp W            &kp F           &kp P             &kp B             &kp J      &kp L              &kp U            &kp Y            &kp SEMICOLON  &kp DELETE
+&kp LEFT_SHIFT  &mt LCTRL A  &mt LEFT_ALT R   &mt LEFT_GUI S  &mt LEFT_SHIFT T  &kp G             &kp M      &mt RIGHT_SHIFT N  &mt RIGHT_GUI E  &mt RIGHT_ALT I  &mt RCTRL O    &kp RIGHT_CONTROL
+&kp LEFT_GUI    &kp Z        &kp X            &kp C           &kp D             &kp V             &kp K      &kp H              &kp COMMA        &kp PERIOD       &kp SLASH      &mo 5
+&kp LEFT_ALT    &kp ESCAPE   &lt 4 BACKSPACE  &lt 3 SPACE     &lt 5 TAB                    &mo 6  &kp ENTER                                                                      &mo 3
             >;
         };
 
