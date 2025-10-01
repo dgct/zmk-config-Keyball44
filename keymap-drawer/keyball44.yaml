@@ -39,11 +39,11 @@ layers:
   - SYM
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-esc$$
-  - ARROW
-  - {t: '$$mdi:keyboard-space$$', h: NAV}
-  - {t: '$$mdi:keyboard-tab$$', h: SYM}
-  - {t: '$$mdi:backspace$$', h: NUM}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-tab$$', h: ARROW}
+  - {t: '$$mdi:keyboard-space$$', h: SYM}
+  - NAV
+  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
+  - {t: '$$mdi:keyboard-return$$', h: NUM}
   - NAV
   WIN:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -175,8 +175,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
@@ -265,8 +265,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -312,6 +312,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
