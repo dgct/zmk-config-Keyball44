@@ -32,28 +32,6 @@
 #define THUMBS_R \
     41 42
 
-/* Left-hand HRMs. */
-ZMK_HOLD_TAP(hml,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;
-    require-prior-idle-ms = <150>;
-    bindings = <&kp>, <&kp>;
-    hold-trigger-key-positions = <KEYS_R THUMBS_L THUMBS_R>;
-    hold-trigger-on-release;
-)
-
-/* Right-hand HRMs. */
-ZMK_HOLD_TAP(hmr,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;
-    require-prior-idle-ms = <150>;
-    bindings = <&kp>, <&kp>;
-    hold-trigger-key-positions = <KEYS_L THUMBS_L THUMBS_R>;
-    hold-trigger-on-release;
-)
-
 &trackball {
     // automouse-layer = <4>;
 
@@ -93,32 +71,56 @@ ZMK_HOLD_TAP(hmr,
     // custom shift using mod-morph 
 
     behaviors {
-        cmqus: comma_question {
+          cmqus: comma_question {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_QUESTION";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp QUESTION>;
-
+          
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        dtsmi: dot_semi {
+          };
+          
+          dtsmi: dot_semi {
             compatible = "zmk,behavior-mod-morph";
             label = "DOT_SEMI";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp SEMI>;
-
+          
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        bkdel: back_delete {
+          };
+          
+          bkdel: back_delete {
             compatible = "zmk,behavior-mod-morph";
             label = "BACK_DELETE";
             bindings = <&kp BACKSPACE>, <&kp DEL>;
-
+          
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+          };
+
+          hml: hold_tap_left {
+             compatible = "zmk,behavior-hold-tap";
+             label = "HOLD_TAP_LEFT";
+             flavor = "balanced";
+             tapping-term-ms = <280>;
+             quick-tap-ms = <175>;
+             require-prior-idle-ms = <150>;
+             bindings = <&kp>, <&kp>;
+             hold-trigger-key-positions = <KEYS_R THUMBS_L THUMBS_R>;
+             hold-trigger-on-release;
+         };
+     
+         hmr: hold_tap_right {
+             compatible = "zmk,behavior-hold-tap";
+             label = "HOLD_TAP_RIGHT";
+             flavor = "balanced";
+             tapping-term-ms = <280>;
+             quick-tap-ms = <175>;
+             require-prior-idle-ms = <150>;
+             bindings = <&kp>, <&kp>;
+             hold-trigger-key-positions = <KEYS_L THUMBS_L THUMBS_R>;
+             hold-trigger-on-release;
+         };
     };
 
     keymap {
