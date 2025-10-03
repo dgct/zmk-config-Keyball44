@@ -14,15 +14,15 @@ layers:
   - {t: ;, s: ':'}
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-shift$$
-  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: R, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
+  - '&hml LCTRL A'
+  - '&hml LEFT_ALT R'
+  - '&hml LEFT_GUI S'
+  - '&hml LEFT_SHIFT T'
   - G
-  - M
-  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: E, h: RIGHT GUI}
-  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
+  - '&hmr M'
+  - '&hmr RIGHT_SHIFT N'
+  - '&hmr RIGHT_GUI E'
+  - '&hmr RIGHT_ALT I'
   - {t: O, h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
@@ -59,16 +59,16 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
+  - '&hml LEFT_GUI A'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&hml LCTRL S'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: E, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: O, h: RIGHT GUI}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&hmr RCTRL E'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&hmr RIGHT_GUI O'
   - RIGHT GUI
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:transfer$$', type: trans}
