@@ -3,7 +3,7 @@
 #define GAME    2
 #define NAV     3
 #define MOUSE   4
-#defing SCROLL  5
+#define SCROLL  5
 #define ARROW   6
 #define SYM     7
 #define NUM     8
