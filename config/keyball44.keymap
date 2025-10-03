@@ -18,17 +18,14 @@
      0  1  2  3  4  5    \
     12 13 14 15 16 17    \
     24 25 26 27 28 29    \
-    36 
-
+    36
 #define KEYS_R  \
      6  7  8  9 10 11 \
     18 19 20 21 22 23 \
     30 31 32 33 34 35 \
     43
-
 #define THUMBS_L  \
     37 38 39 40
-
 #define THUMBS_R \
     41 42
 
@@ -64,84 +61,85 @@
 &caps_word { continue-list = <UNDERSCORE MINUS>; };
 
 / {
-
     behaviors {
-          cmqus: comma_question {
+        cmqus: comma_question {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_QUESTION";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp QUESTION>;
-          
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
-          };
-          
-          dtsmi: dot_semi {
+        };
+
+        dtsmi: dot_semi {
             compatible = "zmk,behavior-mod-morph";
             label = "DOT_SEMI";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp SEMI>;
-          
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
-          };
-          
-          bkdel: back_delete {
+        };
+
+        bkdel: back_delete {
             compatible = "zmk,behavior-mod-morph";
             label = "BACK_DELETE";
             bindings = <&kp BACKSPACE>, <&kp DEL>;
-          
+
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-          };
+        };
 
-          shtl: shift_tap_left {
-             compatible = "zmk,behavior-hold-tap";
-             label = "SHIFT_TAP_LEFT";
-             flavor = "balanced";
-             hold-trigger-key-positions = <KEYS_R THUMBS_R>;
-             hold-trigger-on-release;
-             tapping-term-ms = <280>;
-             quick-tap-ms = <175>;
-             #binding-cells = <2>;
-             bindings = <&kp>, <&kp>;
-          };
+        shtl: shift_tap_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHIFT_TAP_LEFT";
+            flavor = "balanced";
+            hold-trigger-key-positions = <KEYS_R THUMBS_R>;
+            hold-trigger-on-release;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+        };
 
-          shtr: shift_tap_right {
-             compatible = "zmk,behavior-hold-tap";
-             flavor = "balanced";
-             label = "SHIFT_TAP_RIGHT";
-             hold-trigger-key-positions = <KEYS_L THUMBS_L>;
-             hold-trigger-on-release;
-             tapping-term-ms = <280>;
-             quick-tap-ms = <175>;
-             #binding-cells = <2>;
-             bindings = <&kp>, <&kp>;
-          };
+        shtr: shift_tap_right {
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "balanced";
+            label = "SHIFT_TAP_RIGHT";
+            hold-trigger-key-positions = <KEYS_L THUMBS_L>;
+            hold-trigger-on-release;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+        };
 
-          hml: home_mod_left {
-             compatible = "zmk,behavior-hold-tap";
-             label = "HOME_MOD_LEFT";
-             flavor = "balanced";
-             tapping-term-ms = <280>;
-             quick-tap-ms = <175>;
-             require-prior-idle-ms = <210>;
-             #binding-cells = <2>;
-             bindings = <&kp>, <&kp>;
-             hold-trigger-key-positions = <KEYS_R THUMBS_R>;
-             hold-trigger-on-release;
-         };
-     
-         hmr: home_mod_right {
-             compatible = "zmk,behavior-hold-tap";
-             label = "HOME_MOD_RIGHT";
-             flavor = "balanced";
-             tapping-term-ms = <280>;
-             quick-tap-ms = <175>;
-             require-prior-idle-ms = <210>;
-             #binding-cells = <2>;
-             bindings = <&kp>, <&kp>;
-             hold-trigger-key-positions = <KEYS_L THUMBS_L>;
-             hold-trigger-on-release;
-         };
+        hml: home_mod_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOME_MOD_LEFT";
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <210>;
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <KEYS_R THUMBS_R>;
+            hold-trigger-on-release;
+        };
+
+        hmr: home_mod_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOME_MOD_RIGHT";
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <210>;
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <KEYS_L THUMBS_L>;
+            hold-trigger-on-release;
+        };
     };
 
     keymap {
@@ -150,20 +148,20 @@
         default_layer {
             label = "MAC";
             bindings = <
-&caps_word      &kp Q        &kp W           &kp F           &kp P             &kp B              &kp J        &kp L              &kp U            &kp Y            &kp SEMICOLON  &kp DELETE
-&kp LEFT_SHIFT  &hml LCTRL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &shtl LEFT_SHIFT T  &kp G              &kp M        &shtr RIGHT_SHIFT N  &hmr RIGHT_GUI E  &hmr RIGHT_ALT I  &hmr RCTRL O    &kp RIGHT_CONTROL
-&kp LEFT_GUI    &kp Z        &kp X           &kp C           &kp D             &kp V              &kp K        &kp H              &kp COMMA        &kp PERIOD       &kp SLASH      &mo 5
-&kp LEFT_ALT    &kp ESCAPE   &lt 4 TAB       &lt 5 SPACE     &mo 3                        &bkdel  &lt 6 ENTER                                                                      &mo 3
+&caps_word      &kp Q         &kp W            &kp F            &kp P               &kp B              &kp J        &kp L                &kp U             &kp Y             &kp SEMICOLON  &kp DELETE
+&kp LEFT_SHIFT  &hml LCTRL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &shtl LEFT_SHIFT T  &kp G              &kp M        &shtr RIGHT_SHIFT N  &hmr RIGHT_GUI E  &hmr RIGHT_ALT I  &hmr RCTRL O   &kp RIGHT_CONTROL
+&kp LEFT_GUI    &kp Z         &kp X            &kp C            &kp D               &kp V              &kp K        &kp H                &kp COMMA         &kp PERIOD        &kp SLASH      &mo 4
+&kp LEFT_ALT    &kp ESCAPE    &kp TAB          &lt 7 SPACE      &mo 4                          &bkdel  &lt 8 ENTER                                                                          &mo 5
             >;
         };
 
         windows_layer {
             label = "WIN";
             bindings = <
-&trans            &trans          &trans  &trans       &trans  &trans              &trans  &trans  &trans       &trans  &trans           &trans
+&trans            &trans           &trans  &trans        &trans  &trans              &trans  &trans  &trans        &trans  &trans            &trans
 &trans            &hml LEFT_GUI A  &trans  &hml LCTRL S  &trans  &trans              &trans  &trans  &hmr RCTRL E  &trans  &hmr RIGHT_GUI O  &kp RIGHT_GUI
-&kp LEFT_CONTROL  &trans          &trans  &trans       &trans  &trans              &trans  &trans  &trans       &trans  &trans           &trans
-&trans            &trans          &trans  &trans       &trans              &trans  &trans                                                &trans
+&kp LEFT_CONTROL  &trans           &trans  &trans        &trans  &trans              &trans  &trans  &trans        &trans  &trans            &trans
+&trans            &trans           &trans  &trans        &trans              &trans  &trans                                                  &trans
             >;
         };
 
@@ -180,10 +178,30 @@
         navigation_layer {
             label = "NAV";
             bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mo 6   &mo 5   &mo 4               &trans  &trans                                  &trans
+            >;
+        };
+
+        mouse_layer {
+            label = "MOUSE";
+            bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4  &kp NUMBER_5              &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
 &trans  &kp LEFT      &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT     &none                     &none         &mkp LCLK     &mkp RCLK     &mkp MCLK     &none         &trans
 &trans  &kp HOME      &kp PAGE_UP   &kp PAGE_DOWN   &kp END       &none                     &none         &none         &none         &none         &none         &trans
 &trans  &trans        &trans        &trans          &trans                          &trans  &trans                                                                &trans
+            >;
+        };
+
+        scroll_layer {
+            label = "SCROLL";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
             >;
         };
 
