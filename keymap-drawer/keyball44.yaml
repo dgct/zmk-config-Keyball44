@@ -41,7 +41,7 @@ layers:
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:keyboard-tab$$', h: SYM}
   - $$mdi:keyboard-space$$
-  - {t: MOUSE, h: '$$mdi:gesture-tap-hold$$'}
+  - MOUSE
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
   - {t: '$$mdi:keyboard-return$$', h: NUM}
   - SCROLL
