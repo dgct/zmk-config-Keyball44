@@ -152,11 +152,11 @@
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo 4>,
-                <&macro_tap>,
-                <&tog 3>,
+                <&macro_press>,
+                <&mo 3>,
                 <&macro_wait_time 400>,
-                <&macro_tap>,
-                <&tog 3>;
+                <&macro_release>,
+                <&mo 3>;
 
             label = "MOUSE_NAV";
         };
@@ -170,11 +170,11 @@
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo 5>,
-                <&macro_tap>,
-                <&tog 3>,
+                <&macro_press>,
+                <&mo 3>,
                 <&macro_wait_time 400>,
-                <&macro_tap>,
-                <&tog 3>;
+                <&macro_release>,
+                <&mo 3>;
 
             label = "SCROLL_NAV";
         };
@@ -188,11 +188,11 @@
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo 6>,
-                <&macro_tap>,
-                <&tog 3>,
+                <&macro_press>,
+                <&mo 3>,
                 <&macro_wait_time 400>,
-                <&macro_tap>,
-                <&tog 3>;
+                <&macro_release>,
+                <&mo 3>;
 
             label = "ARROW_NAV";
         };
