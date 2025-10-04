@@ -153,7 +153,7 @@
                 <&macro_release>,
                 <&mo 4>,
                 <&macro_wait_time 5>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&sl 3>;
 
             label = "MOUSE_NAV";
@@ -169,7 +169,7 @@
                 <&macro_release>,
                 <&mo 5>,
                 <&macro_wait_time 5>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&sl 3>;
 
             label = "SCROLL_NAV";
@@ -185,7 +185,7 @@
                 <&macro_release>,
                 <&mo 6>,
                 <&macro_wait_time 5>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&sl 3>;
 
             label = "ARROW_NAV";
