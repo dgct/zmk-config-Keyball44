@@ -52,10 +52,11 @@
 
 &lt {
     tapping-term-ms = <280>;
-    flavor = "hold-preferred";
+    flavor = "balanced";
     quick-tap-ms = <175>;
     hold-trigger-key-positions = <THUMBS_L THUMBS_R>;
     hold-trigger-on-release;
+    require-prior-idle-ms = <210>;
 };
 
 &caps_word { continue-list = <UNDERSCORE MINUS>; };
