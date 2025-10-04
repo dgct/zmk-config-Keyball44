@@ -53,7 +53,6 @@
     flavor = "balanced";
     quick-tap-ms = <175>;
     hold-trigger-key-positions = <37 38 39 40 41 42>;
-    hold-trigger-on-release;
 };
 
 &caps_word { continue-list = <UNDERSCORE MINUS>; };
