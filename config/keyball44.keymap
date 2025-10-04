@@ -154,10 +154,7 @@
                 <&mo 4>,
                 <&macro_wait_time 5>,
                 <&macro_press>,
-                <&mo 3>,
-                <&macro_wait_time 400>,
-                <&macro_release>,
-                <&mo 3>;
+                <&sl 3>;
 
             label = "MOUSE_NAV";
         };
@@ -173,10 +170,7 @@
                 <&mo 5>,
                 <&macro_wait_time 5>,
                 <&macro_press>,
-                <&mo 3>,
-                <&macro_wait_time 400>,
-                <&macro_release>,
-                <&mo 3>;
+                <&sl 3>;
 
             label = "SCROLL_NAV";
         };
@@ -192,10 +186,7 @@
                 <&mo 6>,
                 <&macro_wait_time 5>,
                 <&macro_press>,
-                <&mo 3>,
-                <&macro_wait_time 400>,
-                <&macro_release>,
-                <&mo 3>;
+                <&sl 3>;
 
             label = "ARROW_NAV";
         };
