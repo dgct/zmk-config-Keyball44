@@ -1,12 +1,11 @@
 #define DEFAULT 0
 #define WIN     1
 #define GAME    2
-#define NAV     3
-#define MOUSE   4
-#define SCROLL  5
-#define ARROW   6
-#define SYM     7
-#define NUM     8
+#define MOUSE   3
+#define SCROLL  4
+#define ARROW   5
+#define SYM     6
+#define NUM     7
 
 #include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/mouse.h>
@@ -32,7 +31,6 @@
     41 42
 
 &trackball {
-    automouse-layer = <NAV>;
     scroll-layers = <SCROLL>;
     snipe-layers = <MOUSE>;
 
