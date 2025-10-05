@@ -49,8 +49,7 @@
 };
 
 &lt {
-    flavor = "hold-preferred";
-    tapping-term-ms = <280>;
+    flavor = "balanced";
     quick-tap-ms = <175>;
 };
 
@@ -146,56 +145,6 @@
             bindings = <&mo 3>, <&mo 4>, <&mo 5>;
 
             tapping-term-ms = <280>;
-        };
-    };
-
-    macros {
-        mouse_nav: mouse_nav {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&mo 3>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&mo 3>,
-                <&macro_wait_time 5>,
-                <&macro_tap>,
-                <&sl 0>;
-
-            label = "MOUSE_NAV";
-        };
-
-        scroll_nav: scroll_nav {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&mo 4>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&mo 4>,
-                <&macro_wait_time 5>,
-                <&macro_tap>,
-                <&sl 0>;
-
-            label = "SCROLL_NAV";
-        };
-
-        arrow_nav: arrow_nav {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&mo 5>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&mo 5>,
-                <&macro_wait_time 5>,
-                <&macro_tap>,
-                <&sl 0>;
-
-            label = "ARROW_NAV";
         };
     };
 
