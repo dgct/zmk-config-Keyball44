@@ -48,12 +48,7 @@
     };
 };
 
-&lt {
-    tapping-term-ms = <280>;
-    flavor = "balanced";
-    quick-tap-ms = <175>;
-    hold-trigger-key-positions = <37 38 39 40 41 42>;
-};
+&lt { flavor = "hold-preferred"; };
 
 &caps_word { continue-list = <UNDERSCORE MINUS>; };
 
