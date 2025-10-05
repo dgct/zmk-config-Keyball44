@@ -48,7 +48,11 @@
     };
 };
 
-&lt { flavor = "hold-preferred"; };
+&lt {
+    flavor = "hold-preferred";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+};
 
 &caps_word { continue-list = <UNDERSCORE MINUS>; };
 
